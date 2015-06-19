@@ -2,94 +2,95 @@
     {
         "title": "Data Catalog",
         "description": "Version 1.0", 
-        "keyword": "catalog", 
+        "keyword": ["catalog"], 
         "modified": "",
         "publisher": "",
-        "person": "",
+        "contactPoint": "",
         "mbox": "",
         "identifier": "",
         "accessLevel": "public",
+        "bureauCode": [""],
+        "programCode": [""],    
         "distribution": [
             {
                 "accessURL": "",
-                "format": "json"
+                "format": "application/json"
             }
         ]  
     },
     {
         "title": "",
         "description": "", 
-        "keyword": "", 
+        "keyword": ["",""], 
         "modified": "",
         "publisher": "",
-        "person": "",
+        "contactPoint": "",
         "mbox": "",
         "identifier": "",
         "accessLevel": "",
-        "dataDictionary": "",
+        "bureauCode": [""],
+        "programCode": [""],
+        "accessLevelComment": "",
         "distribution": [
             {
                 "accessURL": "", 
-                "format": "",
-                "size": ""
+                "format": ""
             }
         ],
         "webService": "", 
         "license": "", 
         "spatial": "", 
         "temporal": "", 
+        "theme": [""], 
+        "dataDictionary": "",
+        "dataQuality": ,
         "issued": "",
         "accrualPeriodicity": "",
-        "language": "", 
-        "granularity": "",
-        "dataQuality": "",
-        "theme": "", 
-        "references": "", 
+        "language": [""], 
+        "primaryITInvestmentUII": "", 
+        "references": ["",""], 
         "landingPage": "",
-        "feed": "",
         "systemOfRecords": ""     
     },
     {
         "title": "",
         "description": "", 
-        "keyword": "", 
+        "keyword": ["",""], 
         "modified": "",
         "publisher": "",
-        "person": "",
+        "contactPoint": "",
         "mbox": "",
         "identifier": "",
         "accessLevel": "",
-        "dataDictionary": "",
+        "bureauCode": [""],
+        "programCode": [""],
+        "accessLevelComment": "",
         "distribution": [
             {
                 "accessURL": "", 
-                "format": "",
-                "size": ""
-            },
+                "format": ""
+            }, 
             {
                 "accessURL": "", 
-                "format": "",
-                "size": ""
-            },
+                "format": ""
+            }, 
             {
                 "accessURL": "", 
-                "format": "",
-                "size": ""
+                "format": ""
             }
         ],
         "webService": "", 
         "license": "", 
         "spatial": "", 
         "temporal": "", 
+        "theme": [""], 
+        "dataDictionary": "",
+        "dataQuality": ,
         "issued": "",
         "accrualPeriodicity": "",
-        "language": "", 
-        "granularity": "",
-        "dataQuality": "",
-        "theme": "", 
-        "references": "", 
+        "language": [""], 
+        "primaryITInvestmentUII": "", 
+        "references": [""], 
         "landingPage": "",
-        "feed": "",
         "systemOfRecords": ""     
-    }
-]
+    }]

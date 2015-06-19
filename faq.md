@@ -83,7 +83,7 @@ Agencies' Information Resource Management (IRM) plans are comprehensive strategi
 
 ### How do the IRM plans relate to the open data policy?
 
-In 2012, OMB established PortfolioStat accountability sessions to engage directly with agency leadership to assess the maturity and effectiveness of current IT management practices and address management opportunities and challenges. As part of the annual PortfolioStat process, agencies must update their IRM Strategic Plans to describe how they are meeting new and existing information life cycle management requirements.  Specifically, agencies must describe how they have institutionalized and operationalized the interoperability and openness requirements in this Memorandum into their core processes across all applicable agency programs and stakeholders.  The [FY13 OMB PortfolioStat Guidance](http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-09.pdf. ) was issued on March 27, 2013. 
+In 2012, OMB established PortfolioStat accountability sessions to engage directly with agency leadership to assess the maturity and effectiveness of current IT management practices and address management opportunities and challenges. As part of the annual PortfolioStat process, agencies must update their IRM Strategic Plans to describe how they are meeting new and existing information life cycle management requirements.  Specifically, agencies must describe how they have institutionalized and operationalized the interoperability and openness requirements in this Memorandum into their core processes across all applicable agency programs and stakeholders.  The [FY13 OMB PortfolioStat Guidance](http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-09.pdf) was issued on March 27, 2013. 
 
 ## Machine Readable and Open Formats
 
@@ -95,23 +95,23 @@ While ISO 32000 is an open standard, the Portable Document Format (PDF) does not
 
 ### What is the relationship of the metadata standard (specifically) to NIEM, ISE, FGDC, and other existing (especially official) government data standards?
 
-The [common core metadata schema](/schema/) is based on existing vocabularies and easily mapped to NIEM, Information Sharing Environment, and FGDC.
+The [Project Open Data metadata schema](/v1.1/schema) is based on existing vocabularies and easily mapped to NIEM, Information Sharing Environment, and FGDC.
 
 ### What is a "persistent identifier"?
 
 A persistent identifier is a unique label assigned to digital objects or data files that is managed and kept up to date over a defined time period (e.g., Unique Investment Identifiers).
 
-### Who established the common core metadata schema?
+### Who established the Project Open Data metadata schema?
 
 The core metadata schema was the result of recommendations from a government-wide Metadata Working Group at Data.gov combined with research of existing public schemas for data catalogs.  Most of the elements trace their roots to the Dublin Core Library.
  
 ### How can I recommend changes and improvements to the metadata schema?
 
-Submit a pull request for the [metadata schema](/schema/). 
+Submit a [new issue](https://github.com/project-open-data/project-open-data.github.io/issues/new) describing the change you would like to see.
 
-### Can I extend the metadata schema beyond the terms specified in the [common core metadata schema](/schema/)?
+### Can I extend the metadata schema beyond the terms specified in the [Project Open Data metadata schema](/v1.1/schema)?
 
-Yes, if your data management process includes rich metadata specific to the mission of your agency or the Line of Business your agency participates, publishing additional metadata that makes your data more useful to the public is welcomed and encouraged.  Note that Data.gov will be harvesting only the metadata in this published schema unless specific arrangements are in place (e.g. geospatial FGDC/ISO).
+Yes, if your data management process includes rich metadata specific to the mission of your agency or the Line of Business in which your agency participates, publishing additional metadata that makes your data more useful to the public is welcomed and encouraged.  Note that Data.gov will be harvesting only the metadata in this published schema unless specific arrangements are in place (e.g. geospatial FGDC/ISO).
  
 
 ## Security, Privacy and Data Quality
@@ -132,15 +132,15 @@ Having the metadata available at the agency level provides agencies with a self-
 
 ### How will agency.gov/open, /developer, and /data pages work together?
 
-The agency.gov/open page contains informational regards an agencies contributions to Open Government, while the /developer and /data pages pertain to APIs and Open Data. All three pages contribute to an open and transparent government in the United States.
+The agency.gov/open page contains information regarding an agency's contributions to Open Government, while the /developer and /data pages pertain to APIs and Open Data, respectively. All three pages contribute to an open and transparent government in the United States.
 
 ### What is the relationship of the /data page and public data listing to Data.gov, and how will this impact current Data.gov processes?
 
-In the near term, Data.gov will continue its current dataset publishing process.  As agencies deploy agency.gov/data pages, the publishing process will become a harvesting of metadata from the agencies web site.
+In the near term, Data.gov will continue its current dataset publishing process.  As agencies deploy agency.gov/data pages, the publishing process will become a harvesting of metadata from these agency data hubs.
 
 ### Are redirects allowed for /data pages?
 
-No, the files should be located at agency.gov/data web space.  Each agency should populate files named agency.gov/data.json, agency.gov/data.html and agency.gov/data.xml.
+No, the file should be located at the agency.gov/data web space.  Each agency should publish their Public Data Listing at agency.gov/data.json.
  
 ### What options exist for hosting the /data.json file specifically at agency.gov/data.json?  
 
@@ -150,17 +150,17 @@ No, the files should be located at agency.gov/data web space.  Each agency shoul
 4. Sites that utilize Drupal may modify and employ the open-sourced [Digital Strategy Drupal Module](https://github.com/FCC/digital_strategy).  
 
  
-### How do I get started building this /data file?
+### How do I get started building this data.json file?
 
-Data.gov will (when possible) help agencies get started by creating a /data file for each agency containing the metadata in the correct syntax.  The agency will then begin to manage that file for future publishing of datasets.
+Data.gov will (when possible) help agencies get started by creating a data.json file for each agency containing the metadata in the correct syntax.  The agency will then begin to manage that file for future publishing of datasets.
   
-### How should I manage this /data file?
+### How should I manage this data.json file?
 
 A wide variety of tools are available to manage a data catalog, whether public-facing or for internal data managements. The records of metadata in the file can be managed by databases, spreadsheets, or even text editors. Data management systems should be able to export the metadata either in the desired format or in one which may be simply mapped with [tools](http://labs.data.gov).
  
-### What formats are required/recommended for the agency.gov/data file?
+### What formats are required/optional for the agency.gov/data file?
 
-There are several syntaxes that may be used when publishing the data file. The syntax that is required to make the data readily available to developers is JSON (JavaScript Object Notation). It is recommended that agencies also create a data.html file and use RDFa Lite (Resource Description Framework) to mark-up the metadata using the [common core metadata schema](/schema/). The RDFa Lite file can be easily consumed by major search engines and applications and make you data easier to find by the public. A third alternative for populating your metadata file is XML (eXtensible Markup Language). Agencies are encouraged to maintain all three version of the metadata file. [Tools](http://labs.data.gov) are available to transform any instance of the file into the alternative formats.
+JSON is required though there are several optional syntaxes that can also be used when publishing the data file. The syntax that is required to make the data readily available to developers is JSON (JavaScript Object Notation). Agencies should also create a data.html file for the human-browsable data homepage and may use RDFa Lite (Resource Description Framework) to mark-up each dataset's metadata using the [Project Open Data metadata schema](/v1.1/schema). Agencies may also choose to populate a metadata file using XML (eXtensible Markup Language). These alternate metadata files are optional but agencies must maintain the JSON version at agency.gov/data.json. [Tools](http://labs.data.gov) are available to transform any instance of the file into the alternative formats.
 
 ## Agency participation with Open Data
 
